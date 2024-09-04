@@ -1,0 +1,550 @@
+
+
+*,
+*::after,
+*::before{
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+};
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+};
+
+a,
+a:hover{
+    text-decoration: none;
+};
+
+a:hover{
+    color: var(primary-color);
+};
+
+ul,
+ol{
+    margin: 0px;
+    padding: 0px;
+};
+
+/* ==== variable Define ==== */
+
+:root{
+    --primary-color: #A82C48;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font:'Roboto', sans-serif;
+    --secondry-font:'Quicksant', sans-serif
+};
+
+html{
+    scroll-behavior: smooth;
+};
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+};
+
+ /* 
+           ========== Custom Scrrolling  ==========
+ */
+
+ ::-webkit-scrollbar{
+    width: 0.625rem;
+ };
+ ::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+ };
+
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+ }
+
+
+ /* 
+     ========== Custon CSS design =========
+ */
+
+ h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondry-color);
+ };
+
+ h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Quicksant', sans-serif;
+    color: #43121d;
+    line-height: 3rem;
+ };
+
+ h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    color: var(--secondry-color);
+ };
+ p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+ }; 
+ h5{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;  
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    color: var(--primary-color);
+ }
+
+
+ .main-btn{
+     display: inline-block;
+     padding: .625rem 1.825rem;
+     line-height: 1.5626rem;
+     background-color: #A82C48 ;
+     border: 0.1857rem solid #A82C48;
+     color: white;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rbg(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition:  all .4s ease-out 0s;
+    transition:  all .4s ease-out 0s;
+ };
+h1{
+
+}
+ .white-btn{
+    display: inline-block;
+    padding: .625rem 1.825rem;
+    line-height: 1.5626rem;
+    /* background-color: var(--primary-color) ; */
+    border: 0.1857rem solid var(--primary-color);
+    color: var(--text-color);
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rbg(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition:  all .4s ease-out 0s;
+    transition:  all .4s ease-out 0s;
+ };
+ h1{
+
+ }
+ .resBtn{
+   color: black;
+   border: 2px solid #A82C48;
+ }
+ h1{
+
+ }
+ .main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+ }
+h1{
+
+}
+ .white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+ };
+
+ .wrapper{
+    margin-top: 8.25rem;
+    margin-bottom: 8.25rem;
+ };
+ h1{
+
+ }
+
+ .text-content {
+    width: 60%;
+    margin: auto;
+  };
+
+ .counter-section h2,
+ .textimonial-section,
+ .book-food-text h2{
+    color: white;
+ };
+
+
+ /* 
+ ============ Header Section ============
+  */
+h1{
+
+}
+  .navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+  h1{
+
+  }
+  .navigation-wrap .nav-item{
+padding: 0 0.625rem;
+transition: all 200ms linear;
+  };
+  h1{
+
+  }
+  #container{ 
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+  }
+  .nav-link{
+font-size: 0.9357rem;
+font-weight: 600;
+text-transform: capitalize;
+color: var(--primary-color);
+letter-spacing: 1px;
+  };
+  .navigation-wrap .main-btn{
+   padding: 0.3125rem .4175rem;
+   box-shadow: none;
+   margin-left: 0.625rem;
+  }
+
+  /* Change Navbar Styking On Scroll */
+
+  .navigation-wrap.scroll-on{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   background-color: white;
+   box-shadow: 0 .025rem 1.45rem rgb(0, 0 ,0 ,0.9);
+   transition: all .15s ease-in-out 0s;
+  };
+
+  /* 
+  ========= Section 1 ============= 
+  */
+  h1{
+
+  }
+  .top-banner{
+   max-width: 100%;
+   height: auto;
+   background: url(./images/bg/bg-1.jpg) no-repeat center;
+   background-size: cover;
+   padding: 16.875rem 0 9.375rem;
+  };
+
+
+  /* ===========Counter ,  Section 2 ========== */
+h1{
+
+}
+  .counter-section{
+   background-color: #A82C48;
+   padding: 2.5rem 0;
+  }
+h1{
+
+}
+  .counter-section p{
+   color: white;
+   text-transform: uppercase;
+  }
+
+  /* 
+  ============ About , Section 3 ==============
+  */
+
+  h1{
+
+  }
+  .about-section{
+   background: var(--white-color); 
+   margin-top: 7rem;
+  };
+h1{
+
+}
+  .about-section .card, .about-section .card img {
+   border-radius: .625rem;
+  }
+
+  /* 
+  ====== Food type section design =======
+  */
+
+  h1{
+
+  }
+
+  .food-type{
+   padding-top: 3.25rem;
+  };
+
+  h1{
+
+  }
+  .food-type ul li{
+   font-size: 1rem;
+   color: var(--text-color);
+   line-height: 32px;
+   position: relative;
+   margin-left: 30px;
+  };
+  h1{
+   
+  }
+
+  .food-type ul li::before{
+   position: absolute;
+   left: -2.1875rem;
+   color: #A82C48;
+   font-size: 1.25rem;
+   font-family: "Font Awesome 5 Free";
+   content: '\f00c';
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+  }
+
+  /* Story Section  */
+  h1{
+   
+  }
+  
+  .story-section{
+   width: 100%;
+   height: 28.128rem;
+   background: url(./images/bg/bg-2.jpg) no-repeat center;
+   background-size: cover;
+   padding-top: 100px;
+   align-items: center; 
+   text-align: center;
+  }
+  h1{
+
+  }
+
+.story-section h2{
+   color: #A82C48;
+  }
+  
+  /* 
+  ========== Explore Food Section ============
+  */
+
+  h1{
+
+  }
+
+.explore-food .card{
+   border: none;
+   background-color: transparent;
+   border-radius: .9385rem;
+}
+
+h1{
+
+}
+
+.explore-food .card img{ 
+   border-radius: .9385rem;
+   object-fit: cover;
+}
+
+h1{
+
+}
+
+.explore-food .card span{
+ display: block;
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: #A82C48;
+ padding-bottom: 1rem;
+ border-bottom: 0.0625rem solid #eee;
+}
+h1{
+
+}
+
+.explore-food .card span del{
+   color: #999;
+   margin-left: 0.5rem;
+}
+
+
+/* 
+========= Reviews Section ==========
+*/
+h1{
+
+}
+.reviews-section{
+ background-color: #A82C48;
+ height: 28rem;
+ margin-top: 3rem;
+};
+h1{
+
+}
+.reviews-section .carousel-item{ 
+   padding: 4rem 9rem 7.126rem !important;
+   background-color: white;
+   border-radius: 0.9357rem;
+   align-items: center;
+}  
+h1{
+
+}
+.reviews-section .carousel-item img{
+   max-width: 5rem;
+   padding: 0.3125rem;
+   border-radius: 50%; 
+} 
+ 
+h1{
+
+}
+.reviews-section h2{
+   padding-top: 3rem;
+}
+.reviews-section .carousel-item .carousel-caption h5{
+   color: #43121d;
+}
+h1{
+
+}
+.reviews-section .carousel-item .carousel-caption p{
+font-size: 0.9rem;
+line-height: 1.0625rem;
+padding: 0 17% 0.0625rem;
+color: #A82C48;
+} 
+.wrapper .carousel-indicators button{
+   width: 15px;
+   height: 15px;
+   outline: none;
+   border-radius: 50%;
+   border: none;
+   margin-left: 1rem;
+   opacity: 0.3; 
+   background-color:  #43121d; 
+}
+h1{
+
+}
+.reviews-section .carousel-indicators button.active{
+   opacity: 1;
+}
+
+/* FAQ Section */
+ 
+h1{
+
+}
+.faq h4 span{
+   color:#A82C48;
+   font-size: 1.875rem;
+   margin-right: 0.3174rem;
+}
+
+.book-food{
+   background: url(./images//bg//bg-3.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: 0 71.9125px;
+   padding: 4.375rem 0;
+}
+
+.book-food h2 {
+   color: white;
+}
+
+/* Form Control */
+
+.news-letter{
+   width: 55%;
+   margin: 0 auto;
+}  
+
+.form-control {
+height: 3.225rem;
+padding: 0 1.25rem;
+font-size: 0.875rem;
+width: 100%;
+border: none;
+border-radius: 0;
+background: transparent;
+border: 0.1875rem solid #999;
+color: black;
+font-weight: 700;
+}
+
+.form-control:hover,
+.form:focus {
+   outline: none;
+   border-color: #A82C48;
+   box-shadow: none;
+}
+
+
+
+/* Footer Section  */
+
+.footer{
+   background-color: #A82C48;
+   margin-top: 8rem !important;
+}
+
+.footer .footer-link {
+   font-size: 1rem;
+   color: white;
+   padding: 0 1.875rem;
+}
+
+.footer .footer-link:hover {
+   color: white;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer a i {
+   font-size: 1.5rem;
+   padding: 0 1rem;
+   color: white;
+
+}
